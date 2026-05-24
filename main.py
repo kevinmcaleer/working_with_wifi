@@ -70,7 +70,7 @@ client.register("pressure", value=None)
 client.start()
 
 last_update = ticks_ms()
-update_interval = 5 # Update every 5 seconds
+update_interval = 1 # Update every 1 seconds
 
 while True:
     try:
@@ -81,9 +81,9 @@ while True:
             temperature, pressure, humidity = bme280.read_compensated_data()
             print(f"temperature is: {temperature}, humidity is: {humidity}, pressure is: {pressure}")
             client['temperature'] = round(temperature, 1)
-            client['humidity'] = humidity
+            client['humidity'] = round(humidity, 1)
             client['pressure'] = pressure // 100
-            print(f"Updated: Temp={temperature:.1f}°C")
+            
             last_update = current_time
             
         # keep the client running (process callbacks)

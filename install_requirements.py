@@ -2,8 +2,6 @@ import network
 import time
 from secrets import WIFI_SSID, WIFI_PASSWORD
 
-from machine import Pin
-
 # Create the WiFi interface
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
