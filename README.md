@@ -24,7 +24,7 @@ Adjust the `SDA` / `SCL` pins in `main.py` to match your wiring.
 | `install_requirements.py` | Connects to Wi-Fi and `mip`-installs the required packages on the device |
 | `bmetest.py` | Standalone BME280 read loop, no cloud |
 | `bme280_float.py` | BME280 driver (floating-point variant) |
-| `arduino-iot-cloud-py/arduino_iot_cloud` | The Arduino IoT Cloud Python client |
+| `arduino_iot_cloud` | The Arduino IoT Cloud Python client |
 
 ## Setup
 
@@ -57,7 +57,7 @@ Copy the following onto the board (e.g. via Thonny, `mpremote`, or `rshell`):
 - `main.py`
 - `bme280_float.py`
 - `secrets.py`
-- `arduino-iot-cloud-py/arduino_iot_cloud/` (as `arduino_iot_cloud/` on the device)
+- `arduino_iot_cloud/` (as `arduino_iot_cloud/` on the device)
 
 ### 4. Install the required MicroPython packages
 
